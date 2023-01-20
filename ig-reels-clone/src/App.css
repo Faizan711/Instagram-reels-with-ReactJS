@@ -1,38 +1,33 @@
-.App {
+html{
+  scroll-snap-type: y mandatory; /*This makes the scrolling smooth by just a snap vertically*/
+}
+.app{
+  display: grid;
+  place-items: center;
+  background-color: black;
+  height: 100vh;
+}
+.app__top{
+  margin-bottom: -100px;
+}
+.app__top > h1{
+  color: white;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app__videos{
+  position: relative;
+  height: 65vh;
+  background-color: white;
+  width: 70%;
+  border-radius: 20px;
+  max-width: 450px;
+  max-height: 1200px;
+  overflow: scroll;              /*This makes the scrolling smooth by just a snap vertically*/
+  scroll-snap-type: y mandatory; /*This makes the scrolling smooth by just a snap vertically*/
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app__videos::-webkit-scrollbar{ /*For chrome, Safari and Brave to hide the navigation scrollbar*/
+  display: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app__logo{
+  height: 12vh;
 }
