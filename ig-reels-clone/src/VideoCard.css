@@ -1,0 +1,12 @@
+.videoCard{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start; /*this whole css feature is for snappy scrolling as given in parent css also and child css too.*/
+}
+
+.videoCard__player{
+    object-fit: fill; /*also for the snapping part*/
+    height: 100%;
+    width: 100%;
+}

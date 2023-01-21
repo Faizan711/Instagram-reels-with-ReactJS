@@ -1,4 +1,5 @@
 import './App.css';
+import VideoCard from './VideoCard';
 
 function App() {
   return (
@@ -7,14 +8,16 @@ function App() {
       <div className="app__top">
       <img 
       className="app__logo"
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6TNmrdCA6X6BCmHsmvC9wAUjim9md8lnJ0g&usqp=CAU" 
+      src="https://img.icons8.com/fluency/2x/instagram-new.png" 
       alt="" />
       
       <h1>Reels</h1>
       </div>
       
       <div className="app__videos">
-      {/* Main Veritcally scrollable video container */}
+      <VideoCard/>
+      <VideoCard/>
+      <VideoCard/>
       </div>
     </div>
   );
