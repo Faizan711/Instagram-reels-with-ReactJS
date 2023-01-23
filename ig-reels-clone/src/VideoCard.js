@@ -6,8 +6,7 @@ function VideoCard() {
     <div className='videoCard'>
         <video 
         className="videoCard__player"
-        src="https://www.instagram.com/khaby00/?utm_source=ig_embed&ig_rid=67c52c10-1779-4904-a66d-aa2a936cfd5a"
-        alt="ig-reels-videos"
+        src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
         loop
         />
     </div>
