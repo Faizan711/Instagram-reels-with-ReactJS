@@ -3,7 +3,9 @@ import './VideoHeader.css'
 
 function VideoHeader() {
   return (
-    <div>VideoHeader</div>
+    <div>
+        video
+    </div>
   )
 }
 
