@@ -1,0 +1,40 @@
+.videoFooter{
+    position: relative;
+    bottom: 100px;
+    margin-left: 20px;
+}
+
+.videoFooter_text{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.videoFooter_text > h3{
+    margin-left: 10px;
+    padding-bottom: 20px;
+}
+
+.videoFooter_text > h3 > button{
+    color: white;
+    font-weight: 900;
+    text-transform: inherit;
+}
+
+.videoFooter_icon{
+    color: white;
+}
+
+.videoFooter_ticker > .ticker{
+    height: fit-content;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    width: 60%;
+}
+
+.videoFooter_ticker h1{
+    font-size: 12px;
+    color: white;
+}
