@@ -8,7 +8,7 @@ html{
   height: 100vh;
 }
 .app__top{
-  margin-bottom: -100px;
+  margin-bottom: -50px;
 }
 .app__top > h1{
   color: white;
