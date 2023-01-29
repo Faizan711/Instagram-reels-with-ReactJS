@@ -16,11 +16,11 @@ html{
 }
 .app__videos{
   position: relative;
-  height: 65vh;
+  height: 75vh;
   background-color: white;
   width: 70%;
   border-radius: 20px;
-  max-width: 450px;
+  max-width: 350px;
   max-height: 1200px;
   overflow: scroll;              /*This makes the scrolling smooth by just a snap vertically*/
   scroll-snap-type: y mandatory; /*This makes the scrolling smooth by just a snap vertically*/
