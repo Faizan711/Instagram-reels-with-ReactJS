@@ -14,8 +14,17 @@ function App() {
       <h1>Reels</h1>
       </div>
       
-      <div className="app__videos">
-      <VideoCard/>
+      <div className="app__videos"> 
+      {/* this is the container for all the videos */}
+
+      <VideoCard
+      channel="reels"
+      avatarSrc="https://img.freepik.com/premium-vector/funny-facts-icon-bright-colored-bubble-text_421321-115.jpg?size=338&ext=jpg"
+      song='test-song-song'
+      url='http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
+      likes={133}
+      shares={41}
+      />
       <VideoCard/>
       <VideoCard/>
       </div>

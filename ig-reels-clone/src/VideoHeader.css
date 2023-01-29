@@ -1,0 +1,12 @@
+.videoHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding:5px 10px; */
+    position: absolute;
+    width: 100%;
+    color: white;
+}
+.videoHeader > *{    /*This is a way to give separate padding to all the items of a container*/
+    padding: 20px;
+}
