@@ -1,6 +1,6 @@
 .videoFooter{
     position: relative;
-    bottom: 100px;
+    bottom: 50px;
     margin-left: 20px;
 }
 
@@ -14,7 +14,7 @@
 
 .videoFooter_text > h3{
     margin-left: 10px;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
 }
 
 .videoFooter_text > h3 > button{
@@ -62,6 +62,6 @@
     align-items: center;
     margin-right: 10px;
 }
-.vidoeFooter_stat > p{
+.vidoeFooter_stat > p {
     margin-left: 3px;
 }

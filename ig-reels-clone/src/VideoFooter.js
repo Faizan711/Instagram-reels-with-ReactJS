@@ -19,14 +19,14 @@ function VideoFooter({likes, shares, channel, avatarSrc, song}) {
             </h3>
         </div>
         <div className='videoFooter_ticker'>
-            <MusicNoteIcon className='videoFooter_icon'/>
-            <Ticker mode='smooth'>
+            {/* <MusicNoteIcon className='videoFooter_icon'/> */}
+            {/* <Ticker mode='smooth'>
                 {({ index }) => (
                     <>
                         <h1>{song}</h1>
                     </>
                 )}
-            </Ticker>
+            </Ticker> */}
         </div>
         {/* container for all the actions in every reel */}
         <div className='videoFooter_actions'> 

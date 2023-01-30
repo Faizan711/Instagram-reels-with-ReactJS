@@ -1,7 +1,36 @@
 import './App.css';
+import { collection, onSnapshot } from "firebase/firestore";
+import db from './firebase';
+// import firebase from './firebase';
 import VideoCard from './VideoCard';
+import { useState, useEffect} from 'react';
 
 function App() {
+  const [reels, setReels] = useState([]);
+
+  // const fetchPost = async () => {
+  //   await getDocs(collection(db, "reels"))
+  //     .then((querySnapshot) => {
+  //       const newData = querySnapshot.docs
+  //                   .map((doc) => (doc.data()));
+  //               setReels(newData);
+  //     })
+  // };
+  
+  useEffect(()=> {  /*To make sure the app component loads once and never again unless there is a change in the dependencies array passed to it */
+
+  /*Below code is to take the details from the collection we made into firebase database and take all its details as snapshot and this is also dynamic so when the details in the reels collection is changed, the snapshot function is fired again with the latest details on the database */
+  // fetchPost();
+  onSnapshot(collection(db, "reels"), (snapshot) => {
+    setReels(snapshot.docs.map(doc => doc.data()))
+  })
+  
+  // collection(db,'reels').onSnapshot((snapshot) => (
+  //   setReels(snapshot.docs.map(doc => doc.data()))
+  // ))
+  
+  },[]);
+
   return (
     <div className="app">
       {/* <h1>This is IG-Reels Clone</h1> */}
@@ -17,16 +46,16 @@ function App() {
       <div className="app__videos"> 
       {/* this is the container for all the videos */}
 
-      <VideoCard
-      channel="reels"
-      avatarSrc="https://img.freepik.com/premium-vector/funny-facts-icon-bright-colored-bubble-text_421321-115.jpg?size=338&ext=jpg"
-      song='test-song-song'
-      url='http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
-      likes={133}
-      shares={41}
-      />
-      <VideoCard/>
-      <VideoCard/>
+      {reels.map(({channel, avatarSrc, song, url, likes, shares}) => (
+        <VideoCard
+        channel={channel}
+        avatarSrc={avatarSrc}
+        song={song}
+        url={url}
+        likes={likes}
+        shares={shares}
+        />
+      ))}
       </div>
     </div>
   );
